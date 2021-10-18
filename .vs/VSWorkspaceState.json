@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\play",
+    "\\public",
+    "\\public\\css",
+    "\\public\\img",
+    "\\public\\js",
+    "\\src",
+    "\\templates",
+    "\\templates\\partials",
+    "\\templates\\views"
+  ],
+  "PreviewInSolutionExplorer": false
+}

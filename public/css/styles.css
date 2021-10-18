@@ -1,0 +1,72 @@
+
+html, body {
+    background-color: #e3f2fd;
+    background-image: url("/img/mountains.svg");
+    height: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    font-family: Sans-serif;
+}
+img {
+    width: 250px;
+    color:blue;
+}
+#err{
+    text-align:center;
+    font-family:'Century Schoolbook';
+    margin-top:50px;
+    font-size:25px;
+}
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+    background-color: #227e9a;
+}
+#header {
+    background-color: #4a6f82;
+}
+span{
+    text-decoration:none;
+    padding-left:20px;
+    padding-right:20px;
+}
+#about{
+    top:0;
+    width:100%;
+    position:fixed;
+}
+#cen {
+    text-align: center;
+    margin-top:50px;
+}
+form{
+    margin-top:50px;
+}
+#ans {
+    margin-top: 60px;
+    font-family: Sans-serif;
+    font-size:18px;
+}
+button {
+    padding: 8px;
+    background: #227e9a;
+    color: #ffffff;
+    cursor: pointer;
+}
+input{
+    padding:8px;
+
+}
+.logo-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
