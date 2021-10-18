@@ -17,13 +17,7 @@ hbs.registerPartials(path.join(__dirname,'../templates/partials'))
 
 
 
-/*console.log(__dirname)
-console.log(__filename)
-//express.static(path.join(__dirname,'../public'))
-//app.use('',express.static(path.join(__dirname,'../public')))
-app.get('',(req,res)=>{
-		res.(app.use(express.static(path.join(__dirname,'../public'))))
-})*/
+
 
 
 //form this the server starts express looks in the public folder and returns from the request 
@@ -44,19 +38,9 @@ app.get('/weather', (req, res) => {
 		return res.send({ error: 'Address must be specified.' })
 	}
 	
-	/*geocode.geocode(req.query.address, (err,data) => {
-		//console.log(data.Latitude, data.Longitude ,data.place)
-		if (err)
-			return res.send(err)
-		forecast.forecast(data.Latitude, data.Longitude, (err, forecast_data) => {
-			if (err)
-				return res.send(err)
-			res.send(forecast_data)
-        })
-
-	})*/
+	
 	geocode.geocode(req.query.address, (err, data/*{latitude, longitude, place }*/ ) => {//default param ie undefined so no app crsh
-		//console.log(data.Latitude, data.Longitude ,data.place)
+		
 		if (err)
 			return res.send(err)
 		forecast.forecast(data.Latitude, data.Longitude, (err, forecast_data) => {
@@ -68,8 +52,7 @@ app.get('/weather', (req, res) => {
 	})
 
 })
-//app.use('/help',express.static(path.join(__dirname,'../public/help.html')))
-//app.use('/about',express.static(path.join(__dirname,'../public/about.html')))
+
 app.get('/help/*', (req, res) => {
 	res.render('404', {name:'hari'})
 })
