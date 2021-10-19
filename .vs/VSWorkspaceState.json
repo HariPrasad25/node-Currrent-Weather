@@ -1,15 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\play",
     "\\public",
-    "\\public\\css",
-    "\\public\\img",
     "\\public\\js",
     "\\src",
-    "\\templates",
-    "\\templates\\partials",
-    "\\templates\\views"
+    "\\src\\utils"
   ],
+  "SelectedNode": "\\public\\js\\fetch.js",
   "PreviewInSolutionExplorer": false
 }

@@ -30,7 +30,7 @@ weathersearch.addEventListener('submit', (e) => {
             
             else {
                 msgOne.textContent = data.place + ', ' + data.ctry + '.'
-                msgTwo.textContent = 'Now Temperature is ' + data.Temp + '. And it\'s ' + data.wd + '. But the temperature feels like ' + data.feel + '.'
+                msgTwo.textContent = 'Now Temperature is ' + data.Temp + ' Celcius. And it\'s ' + data.wd + '. But the temperature feels like ' + data.feel + ' Celcius.'
             }
 
         })
