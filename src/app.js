@@ -3,8 +3,8 @@ const app=express()
 const path=require('path')
 const hbs =require('hbs')
 const geocode = require('./utils/geo.js')
-const forecast=require('./utils/forecast.js')
-
+const forecast = require('./utils/forecast.js')
+const port = process.env.PORT || 3000
 
 //setting up the view engine so defaultey it looks into views folder for hbs files as specified
 app.set('view engine', 'hbs')
@@ -62,6 +62,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000,()=>{
-	console.log('Server Started on port 3000')
+app.listen(port,()=>{
+	console.log('Server Started on port '+port)
 })
