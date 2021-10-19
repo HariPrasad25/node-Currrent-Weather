@@ -19,6 +19,8 @@ weathersearch.addEventListener('submit', (e) => {
     e.preventDefault()
 
     //console.log(search.value)
+    msgOne.textContent = "Loading.."
+    msgTwo.textContent=""
     fetch('/weather?address=' + search.value).then((response) => {
         response.json().then((data) => {
             if (data.error) {
